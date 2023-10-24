@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        main {
+            background-color: blue;
+            width: 60vw;
+            height: 60vh;
+            margin-left: 20vw;
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; */
+        }
+        section{
+            background-color: bisque;
+            width: 80%;
+            height: 80%;
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; */
+        }
+        ul {
+            width: 80%;
+            height: 80%;
+            background-color: cornflowerblue;
+            border: 1px solid black;
+            /* flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: flex; */
+        }
+        main, section, ul {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        li {
+            border: 1px solid blue;
+            width: 80%;
+            align-items: center;
+            /* flex-direction: column; */
+            justify-content: center;
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            /* height: 80%; */
+        }
+
+        span {
+            background-color: cornsilk;
+            color: white;
+            width: 80%;
+            height: 40px;
+            margin: 5px;
+            padding: 5px;
+           
+        }
+        /* 0~ 768까지가 되면 위드를 백퍼로 잡는다 */
+        @media only screen and (max-width:1024px){
+            main {
+                width: 100vw;
+                margin-left: 0px;
+            }
+            
+        }
+    </style>
+    <title>CSS 복습</title>
+</head>
+<body>
+    <main>
+        <section>
+            <ul>
+                <li><span> 박스1</span><span>입니다</span> </li>
+                <li><span> 박스2 </span></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
